@@ -1,5 +1,4 @@
 const { UserModel, BookModel } = require("../models");
-const issuedBook = require("../dtos/book-dto.js");
 const IssuedBook = require("../dtos/book-dto.js");
 
 exports.getAllBooks = async (req, res) => {
@@ -11,7 +10,6 @@ exports.getAllBooks = async (req, res) => {
       message: "No Book Found",
     });
   }
-  console.log(data);
   return res.status(200).json({
     success: true,
     data: books,
