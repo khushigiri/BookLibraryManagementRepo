@@ -1,3 +1,4 @@
+// for smooth ransactions between js and db
 const mongoose = require("mongoose");
 
 function DbConnection() {
